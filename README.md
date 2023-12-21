@@ -1,4 +1,4 @@
-# reactTrening
+# reactLayout
 
 ## Для dev-запуска проекта локально
 
