@@ -2,8 +2,10 @@ import './Header.css'
 
 const Header = () => {
 return (
-  <header>
-    Hello bro
+  <header className='header'>
+    <div className='line-1'>
+      
+    </div>
   </header>
 )
 }
