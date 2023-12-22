@@ -1,7 +1,9 @@
+import './Header.css'
+
 const Header = () => {
 return (
   <header>
-    <h1>123</h1>
+    СМЕРТЬ СМЕРТЬ СМЕРТЬ СМЕРТЬ СМЕРТЬ СМЕРТЬ СМЕРТЬ 
   </header>
 )
 }
