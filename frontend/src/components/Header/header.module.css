@@ -17,9 +17,13 @@
 
   .pages {
     display: flex;
+    align-items: center;
   }
 
   .headerLink {
+    display: flex;
+    align-items: center;
+
     margin-left: 16px;
     position: relative;
   }
@@ -56,11 +60,11 @@
     padding-bottom: 24px;
   }
 
-  .btnBurger {
+  .burgerBtn {
     width: 48px;
     height: 48px;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 50%;
+    border-radius: 100px;
     border: none;
     margin-right: 16px;
     cursor: pointer;
@@ -113,6 +117,59 @@
     height: 24px;
   }
 
+  /* стили для включения для увеличения масштаба */
+
+  .pagesText {
+    display: none;
+    color: #3E3E3E;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 8px;
+  }
+
+  .helpBtn {
+    display: none;
+    color: white;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    width: 88px;
+    height: 48px;
+    background-color: #EB6D20;
+    border-radius: 70px;
+    border: none;
+  }
+
+  .categories {
+    display: none;
+    /* display: flex; */
+    background-color: #F5F6F8;
+    width: 154px;
+    height: 32px;
+    flex-direction: row;
+    padding-left: 8px;
+    margin-left: 8px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .categoriesBtn {
+    display: none;
+    background-color: #F5F6F8;;
+    white-space: nowrap;
+    border: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #3E3E3E;
+    cursor: pointer;
+  }
+  .searchDown {
+    display: none;
+  }
+
   @media (min-width: 320px) {
     /*
     Стили для устройств, у которых ширина viewport больше или равно 320 пикселей
@@ -120,6 +177,27 @@
   }
 
   @media (min-width: 900px) {
+    .pagesText {
+      display: block;
+    }
+    .helpBtn {
+      display: block;
+    }
+    .line_2 {
+      margin-top: 28px;
+    }
+    .burgerBtn {
+      width: 86px;
+    }
+    .categories {
+      display: flex;
+    }
+    .categoriesBtn {
+      display: block;
+    }
+    .searchDown {
+      display: block;
+    }
     /*
     Стили для устройств, у которых ширина viewport
     больше или равно 990 пикселей, но меньше 1400 пикселей.

@@ -1,7 +1,10 @@
 @import "normalize.css";
 
+a {
+  text-decoration: none;
+}
 
-body, input {
+body, input, button {
   margin: 0;
   font-family: 'Poppins', sans-serif; /* Замените 'Your Font Name' на имя вашего шрифта */
 }
