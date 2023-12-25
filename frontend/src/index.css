@@ -1,9 +1,9 @@
 @import "normalize.css";
-/* @import-normalize; */
 
-body {
-  font-family: "Poppins";
+
+body, input {
   margin: 0;
+  font-family: 'Poppins', sans-serif; /* Замените 'Your Font Name' на имя вашего шрифта */
 }
 
 @font-face {
