@@ -11,6 +11,7 @@ import styles from './header.module.css'
 const Header = () => {
 return (
   <header className={styles.root}>
+    <div className={styles.linesContainer}>
     <div className={styles.line_1}>
       <img className={styles.logo} src={logo} alt="" />
       <div className={styles.search}>
@@ -51,6 +52,7 @@ return (
         <a href="#" className={styles.categoriesText}>Art & Collectibles</a>
         <a href="#" className={styles.categoriesText}>Craft Supplies & Tools</a>
       </div>
+    </div>
     </div>
   </header>
 )
