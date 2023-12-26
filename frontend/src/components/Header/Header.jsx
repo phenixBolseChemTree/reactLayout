@@ -13,6 +13,13 @@ return (
   <header className={styles.root}>
     <div className={styles.line_1}>
       <img className={styles.logo} src={logo} alt="" />
+      <div className={styles.search}>
+        <div className={styles.categories}><button className={styles.categoriesBtn}>All categories</button><img src={down} alt="" /></div>
+        <input className={styles.searchInput} placeholder='Search anything' type="text" />
+        <button className={styles.searchBtn} type='button'>
+          <img className={styles.searchDown} src={search} alt="" />
+          </button>
+      </div>
       <div className={styles.pages}>
         <button className={styles.helpBtn}>Help</button>
         <a href='#' className={styles.headerLink}>
@@ -32,8 +39,17 @@ return (
         <div className={styles.categories}><button className={styles.categoriesBtn}>All categories</button><img src={down} alt="" /></div>
         <input className={styles.searchInput} placeholder='Search anything' type="text" />
         <button className={styles.searchBtn} type='button'>
-          <img className={styles.searchDown} className={styles.searchImg} src={search} alt="" />
+          <img className={styles.searchDown} src={search} alt="" />
           </button>
+      </div>
+      <div className={styles.categoriesBoard}>
+        <a href="#" className={styles.categoriesText}>Jewelry & Accessories</a>
+        <a href="#" className={styles.categoriesText}>Clothing & Shoes</a>
+        <a href="#" className={styles.categoriesText}>Home & Living</a>
+        <a href="#" className={styles.categoriesText}>Wedding & Party</a>
+        <a href="#" className={styles.categoriesText}>Toys & Entertainment</a>
+        <a href="#" className={styles.categoriesText}>Art & Collectibles</a>
+        <a href="#" className={styles.categoriesText}>Craft Supplies & Tools</a>
       </div>
     </div>
   </header>

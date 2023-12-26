@@ -10,9 +10,16 @@
   .line_1 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 28px;
     margin-top: 32px;
     padding: 0 16px;
+  }
+
+  .logo {
+    width: 131.76px;
+    height: 14.16px;
+    margin-right: 90px;
   }
 
   .pages {
@@ -112,11 +119,6 @@
     cursor: pointer;
   }
 
-  .searchImg {
-    width: 24px;
-    height: 24px;
-  }
-
   /* стили для включения для увеличения масштаба */
 
   .pagesText {
@@ -139,6 +141,7 @@
     background-color: #EB6D20;
     border-radius: 70px;
     border: none;
+    margin-left: 24px;
   }
 
   .categories {
@@ -170,6 +173,42 @@
     display: none;
   }
 
+  .categoriesText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .categoriesBoard {
+    display: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* .line_1 .search {
+    display: none;
+  }
+  .line_1 .categories {
+    display: none;
+  }
+  .line_1 .searchInput {
+    display: none;
+  }
+  .line_1 .searchBtn {
+    display: none;
+  }
+  .line_1 .searchDown {
+    display: none;
+  } */
+
+  .line_1 .search {
+    display: none;
+  }
+
+  .categoriesBoard {
+    /* display: none; */
+  }
+
   @media (min-width: 320px) {
     /*
     Стили для устройств, у которых ширина viewport больше или равно 320 пикселей
@@ -185,6 +224,7 @@
     }
     .line_2 {
       margin-top: 28px;
+      /* width: 1,320px; */
     }
     .burgerBtn {
       width: 86px;
@@ -204,7 +244,44 @@
     */
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1416px) {
+    .line_2 .search {
+      display: none;
+    }
+
+    .line_1 .search {
+      display: flex;
+    }
+
+    .line_2 .burgerBtn {
+      display: none;
+    }
+
+    .line_1 {
+      /* width: 1320px; */
+    }
+
+    .categoriesBoard {
+      display: flex;
+    }
+
+    /* .line_1 .search {
+      display: flex;
+    }
+    .line_1 .categories {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .line_1 .searchInput {
+      display: contents;
+    }
+    .line_1 .searchBtn {
+      display: block;
+    }
+    .line_1 .searchDown {
+      display: block;
+    } */
     /*
     Стили для устройств, у которых ширина viewport
     больше или равно 1400 пикселей
