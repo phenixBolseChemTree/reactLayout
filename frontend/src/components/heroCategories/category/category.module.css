@@ -1,7 +1,11 @@
 .card {
-  margin: 24px 16px;
   position: relative;
+  display: flex;
   }
+
+.card:nth-child(2) {
+  margin: 24px 0;
+}
   
   .cardImg {
     width: 288px;
@@ -15,4 +19,36 @@
     color: white;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .card:nth-child(1) .cardImg {
+    background-image: url('../../../assets/images/block1/block1-2-max.png');
+    /* border: 40px solid black; */
+    /* Другие стили */
+    /* border: 10px solid rgb(17, 198, 90); */
+  }
+
+  @media (min-width: 900px) {
+    .card:nth-child(2) {
+      margin: 0 24px;
+    }
+
+    .cardImg {
+      width: 268px;
+    }
+  }
+
+
+  @media (min-width: 1416px) {
+    .cardImg {
+      width: 424px;
+    }
+
+    .card:nth-child(1) .cardImg {
+      background-image: url('../../../assets/images/block1/block1-2-max.png');
+      /* border: 40px solid black; */
+      /* Другие стили */
+      /* border: 10px solid rgb(17, 198, 90); */
+    }
+    
   }

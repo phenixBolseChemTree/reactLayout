@@ -82,7 +82,7 @@
     margin-right: 16px;
     cursor: pointer;
   }
-  
+
   .imgSort {
     width: 24px;
     height: 24px;
@@ -166,7 +166,8 @@
 
   .categoriesBtn {
     display: none;
-    background-color: #F5F6F8;;
+    background-color: #F5F6F8;
+    ;
     white-space: nowrap;
     border: none;
     font-size: 12px;
@@ -175,6 +176,7 @@
     color: #3E3E3E;
     cursor: pointer;
   }
+
   .searchDown {
     display: none;
   }
@@ -225,24 +227,31 @@
     .pagesText {
       display: block;
     }
+
     .helpBtn {
       display: block;
     }
+
     .line_2 {
       margin-top: 28px;
     }
+
     .burgerBtn {
       width: 86px;
     }
+
     .categories {
       display: flex;
     }
+
     .categoriesBtn {
       display: block;
     }
+
     .searchDown {
       display: block;
     }
+
     /*
     Стили для устройств, у которых ширина viewport
     больше или равно 990 пикселей, но меньше 1400 пикселей.
@@ -275,25 +284,4 @@
       display: flex;
     }
 
-    /* .line_1 .search {
-      display: flex;
-    }
-    .line_1 .categories {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .line_1 .searchInput {
-      display: contents;
-    }
-    .line_1 .searchBtn {
-      display: block;
-    }
-    .line_1 .searchDown {
-      display: block;
-    } */
-    /*
-    Стили для устройств, у которых ширина viewport
-    больше или равно 1400 пикселей
-    */
   }
