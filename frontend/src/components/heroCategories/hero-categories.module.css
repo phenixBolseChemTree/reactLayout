@@ -4,7 +4,6 @@
 }
 
 .cardContainer {
-  background-color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +13,6 @@
 @media (min-width: 900px) {
   .cardContainer {
     flex-direction: row;
-    background-color: red;
   }
   .root {
     margin-bottom: 39px;
