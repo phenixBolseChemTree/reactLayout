@@ -81,6 +81,9 @@
     border: none;
     margin-right: 16px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .imgSort {
@@ -123,6 +126,9 @@
     right: 2px;
     top: 2px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   /* стили для включения для увеличения масштаба */
@@ -193,22 +199,6 @@
     width: 100%;
   }
 
-  /* .line_1 .search {
-    display: none;
-  }
-  .line_1 .categories {
-    display: none;
-  }
-  .line_1 .searchInput {
-    display: none;
-  }
-  .line_1 .searchBtn {
-    display: none;
-  }
-  .line_1 .searchDown {
-    display: none;
-  } */
-
   .line_1 .search {
     display: none;
   }
@@ -249,7 +239,10 @@
     }
 
     .searchDown {
-      display: block;
+      display: flex;
+      width: 24px;
+      height: 24px;
+
     }
 
     /*
