@@ -34,7 +34,9 @@ function Home() {
   return (
     <>
       <Header />
-      <HeroCategories heroCategories={heroCategories} />
+      <div>
+        <HeroCategories heroCategories={heroCategories} />
+      </div>
       <HeroProducts heroProducts={heroProducts} />
       {/* <HeroAdvantages /> */}
     </>

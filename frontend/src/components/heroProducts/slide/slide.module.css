@@ -1,0 +1,84 @@
+.cardLikeBtn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  right: 16px;
+}
+
+.cardLike {
+  width: 16px;
+  height: 16px;
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCard {
+  position: relative;
+  width: 312px;
+  height: 418px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  width: 112px;
+  height: 44px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  width: 264px;
+  margin-top: 24px;
+}
+
+.colorPutContainer {
+  display: flex;
+
+}
+
+.colorPut {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+}
+
+@media (min-width: 1416px) {
+  .root {
+    margin-bottom: 24px;
+  }
+
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    width: 312px;
+    height: 418px;
+    background-color: aqua;
+  }
+}
+
+.cardImg {
+  width: 200px;
+  height: 200px;
+}
