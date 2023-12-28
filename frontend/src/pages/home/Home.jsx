@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/header';
 import HeroCategories from '../../components/heroCategories';
+import HeroProducts from '../../components/heroProducts';
 
 function Home() {
   const heroCategories = [{
@@ -19,8 +20,7 @@ function Home() {
     <>
       <Header />
       <HeroCategories heroCategories={heroCategories} />
-      {/* <HeroCategories /> */}
-      {/* <HeroProducts /> */}
+      <HeroProducts />
       {/* <HeroAdvantages /> */}
     </>
   );
