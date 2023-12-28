@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './heroProducts.module.css';
 import Slide from './slide/Slide';
 
@@ -19,6 +20,18 @@ const HeroProducts = ({ heroProducts }) => {
       ))}
     </div>
   );
+};
+
+HeroProducts.propTypes = {
+  heroProducts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      price: PropTypes.string.isRequired,
+      colors: PropTypes.arrayOf.isRequired,
+      background: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
 };
 
 export default HeroProducts;
