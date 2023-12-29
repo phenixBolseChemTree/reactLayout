@@ -10,9 +10,6 @@
   height: 428px;
 }
 
-.maxWindow {
-  display: none;
-}
 
 
 @media (min-width: 900px) {
@@ -21,24 +18,12 @@
     height: 374px;
   }
 
-  .maxWindow {
-    display: flex;
-    justify-content: space-between;
-  }
-
   /* .maxWindow:nth-child(3) . */
-
-  .miniWindow {
-    display: none;
-  }
 }
 
 @media (min-width: 1416px) {
 
-  /* .carousel {
-    width: 1320px;
-  } */
-  .maxWindow {
+  .carousel {
     width: 1320px;
   }
 }

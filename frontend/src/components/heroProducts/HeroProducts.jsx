@@ -40,17 +40,6 @@ const HeroProducts = ({ heroProducts }) => {
           ))}
         </Carousel>
       </div>
-      <div className={styles.maxWindow}>
-        {heroProducts.map((product) => (
-          <Slide
-            id={product.id}
-            colors={product.colors}
-            title={product.title}
-            price={product.price}
-            background={product.background}
-          />
-        ))}
-      </div>
     </div>
   );
 };
