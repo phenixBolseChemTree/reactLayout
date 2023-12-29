@@ -1,6 +1,44 @@
 .root {
-  height: 300px;
+  /* height: 430px; */
   background-color: rgb(13, 76, 186);
   display: flex;
   justify-content: space-evenly;
+}
+
+.carousel {
+  width: 288px;
+  height: 428px;
+}
+
+.maxWindow {
+  display: none;
+}
+
+
+@media (min-width: 900px) {
+  .carousel {
+    width: 852px;
+    height: 374px;
+  }
+
+  .maxWindow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .maxWindow:nth-child(3) . */
+
+  .miniWindow {
+    display: none;
+  }
+}
+
+@media (min-width: 1416px) {
+
+  /* .carousel {
+    width: 1320px;
+  } */
+  .maxWindow {
+    width: 1320px;
+  }
 }

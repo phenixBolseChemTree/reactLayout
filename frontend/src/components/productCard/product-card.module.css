@@ -12,56 +12,87 @@
   right: 16px;
 }
 
-.cardLike {
-  width: 16px;
-  height: 16px;
+.containerImg {
+  position: absolute;
+  width: 208px;
+  height: 208px;
+  top: 40px;
+  left: 40px;
 }
 
-.centerContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.cardLike {
+  width: 14.67px;
+  height: 13.33px;
 }
+
+
 
 .productCard {
   position: relative;
-  width: 312px;
-  height: 418px;
+  width: 288px;
+  height: 394px;
   background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .colorContainer {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
-  width: 112px;
+  width: 230px;
   height: 44px;
+  top: 220px;
+  left: 24px;
 }
 
-.description {
-  display: flex;
-  flex-direction: column;
+.title {
+  position: absolute;
+  text-align: start;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3E3E3E;
+  width: 242px;
   height: 56px;
-  width: 264px;
-  margin-top: 24px;
+  top: 288px;
+  left: 24px;
+}
+
+.price {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #3E3E3E;
+  top: 352px;
+  left: 24px;
+}
+
+.colorText {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #3E3E3E;
+  top: 352px;
+  left: 24px;
 }
 
 .colorPutContainer {
   display: flex;
-
 }
 
 .colorPut {
   width: 16px;
   height: 16px;
-  border-radius: 50%;
+  border-radius: 50px;
   display: flex;
+  margin-right: 8px;
 }
 
 @media (min-width: 1416px) {
@@ -76,9 +107,4 @@
     height: 418px;
     background-color: aqua;
   }
-}
-
-.cardImg {
-  width: 200px;
-  height: 200px;
 }

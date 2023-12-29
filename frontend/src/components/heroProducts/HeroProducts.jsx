@@ -1,23 +1,56 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Carousel } from 'react-responsive-carousel';
 import styles from './heroProducts.module.css';
-import Slide from './slide/Slide';
+import Slide from '../productCard/ProductCard';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 const HeroProducts = ({ heroProducts }) => {
   console.log('data.heroProducts', heroProducts);
-  // console.log('data1', data[0]);
-  // сначала отоброжаем 1 карточнку а потомдобавляем обортку и map
+
+  const onChange = (index) => {
+    console.log(index);
+  };
+
+  const onClickItem = (index) => {
+    console.log(index);
+  };
+
+  const onClickThumb = (index) => {
+    console.log(index);
+  };
   return (
     <div className={styles.root}>
-      {heroProducts.map((product) => (
-        <Slide
-          id={product.id}
-          colors={product.colors}
-          title={product.title}
-          price={product.price}
-          background={product.background}
-        />
-      ))}
+      <div className={styles.miniWindow}>
+        <Carousel
+          className={styles.carousel}
+          showArrows
+          onChange={onChange}
+          onClickItem={onClickItem}
+          onClickThumb={onClickThumb}
+        >
+          {heroProducts.map((product) => (
+            <Slide
+              id={product.id}
+              colors={product.colors}
+              title={product.title}
+              price={product.price}
+              background={product.background}
+            />
+          ))}
+        </Carousel>
+      </div>
+      <div className={styles.maxWindow}>
+        {heroProducts.map((product) => (
+          <Slide
+            id={product.id}
+            colors={product.colors}
+            title={product.title}
+            price={product.price}
+            background={product.background}
+          />
+        ))}
+      </div>
     </div>
   );
 };
