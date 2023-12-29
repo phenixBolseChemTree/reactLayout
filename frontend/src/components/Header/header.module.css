@@ -69,7 +69,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
     margin-top: 12px;
     padding: 0 16px;
     padding-bottom: 24px;
@@ -77,13 +76,18 @@
 
   .burgerBtn {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48px;
     height: 48px;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 100px;
+    border-radius: 150px;
     border: none;
     margin-right: 16px;
+    padding: 0;
     cursor: pointer;
+    /* background-color: red; */
   }
 
   .imgSort {
@@ -98,11 +102,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 48px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 70px;
     position: relative;
+    flex: 1;
   }
 
   .searchInput {
@@ -236,6 +240,15 @@
       margin-top: 28px;
     }
 
+
+    .burgerBtn {
+
+      width: 86px;
+      margin-right: 24px;
+      /* background-color: red; */
+    }
+
+
     .burgerBtn {
       width: 86px;
     }
@@ -257,9 +270,7 @@
       margin-right: 24px;
     }
 
-    .counter {
-
-    }
+    .counter {}
 
 
   }
@@ -305,7 +316,7 @@
     }
 
     .categoriesText:nth-child(4) {
-    color: #EB8426;
+      color: #EB8426;
       /* margin-right: 48px;
       color: #3E3E3E;
       font-size: 14px;
