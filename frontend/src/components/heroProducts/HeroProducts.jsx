@@ -8,26 +8,27 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 const HeroProducts = ({ heroProducts }) => {
   console.log('data.heroProducts', heroProducts);
 
-  const onChange = (index) => {
-    console.log(index);
-  };
+  // const onChange = (index) => {
+  //   console.log(index);
+  // };
 
-  const onClickItem = (index) => {
-    console.log(index);
-  };
+  // const onClickItem = (index) => {
+  //   console.log(index);
+  // };
 
-  const onClickThumb = (index) => {
-    console.log(index);
-  };
+  // const onClickThumb = (index) => {
+  //   console.log(index);
+  // };
   return (
     <div className={styles.root}>
       <div className={styles.miniWindow}>
         <Carousel
           className={styles.carousel}
           showArrows
-          onChange={onChange}
-          onClickItem={onClickItem}
-          onClickThumb={onClickThumb}
+          // onChange={onChange}
+          // onClickItem={onClickItem}
+          // onClickThumb={onClickThumb}
+          showThumbs={3}
         >
           {heroProducts.map((product) => (
             <Slide

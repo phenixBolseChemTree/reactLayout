@@ -14,12 +14,12 @@ const Header = () => (
       <div className={styles.line_1}>
         <img className={styles.logo} src={logo} alt="" />
         <div className={styles.search}>
-          <div className={styles.categories}>
-            <button type="button" className={styles.categoriesBtn}>All categories</button>
+          <button type="button" className={styles.categoriesBtn}>
+            <p className={styles.categories}>All categories</p>
             <img src={down} alt="" />
-          </div>
+          </button>
           <input className={styles.searchInput} placeholder="Search anything" type="text" />
-          <button type="button" className={styles.searchBtn}>
+          <button className={styles.searchBtn} type="button">
             <img className={styles.searchDown} src={search} alt="" />
           </button>
         </div>
@@ -30,9 +30,11 @@ const Header = () => (
             <p className={styles.pagesText}>Account</p>
           </a>
           <a href="#" className={styles.headerLink}>
-            <img className={styles.headerIcon} src={bag} alt="" />
+            <div className={styles.headerIcon}>
+              <img src={bag} alt="" />
+              <span className={styles.counter}>16</span>
+            </div>
             <p className={styles.pagesText}>Shoping</p>
-            <span className={styles.counter}>16</span>
           </a>
         </div>
       </div>
@@ -41,10 +43,10 @@ const Header = () => (
           <img className={styles.imgSort} src={sort} alt="" />
         </button>
         <div className={styles.search}>
-          <div className={styles.categories}>
-            <button type="button" className={styles.categoriesBtn}>All categories</button>
+          <button type="button" className={styles.categoriesBtn}>
+            <p className={styles.categories}>All categories</p>
             <img src={down} alt="" />
-          </div>
+          </button>
           <input className={styles.searchInput} placeholder="Search anything" type="text" />
           <button className={styles.searchBtn} type="button">
             <img className={styles.searchDown} src={search} alt="" />
