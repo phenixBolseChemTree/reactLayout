@@ -21,7 +21,7 @@
   /* .maxWindow:nth-child(3) . */
 }
 
-@media (min-width: 1416px) {
+@media (min-width: 1320px) {
 
   .carousel {
     width: 1320px;

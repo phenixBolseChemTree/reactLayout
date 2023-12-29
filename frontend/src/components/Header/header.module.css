@@ -275,7 +275,7 @@
 
   }
 
-  @media (min-width: 1416px) {
+  @media (min-width: 1320px) {
     .linesContainer {
       width: 1320px;
       margin: 0 auto;

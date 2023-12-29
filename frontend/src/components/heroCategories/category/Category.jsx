@@ -16,7 +16,7 @@ import img3Max from '../../../assets/images/block1/block1-3-max.png';
 
 const Category = ({ id, title }) => {
   const isMediumScreen = useMediaQuery({ maxWidth: 900 });
-  const isMaxScreen = useMediaQuery({ maxWidth: 1416 });
+  const isMaxScreen = useMediaQuery({ maxWidth: 1320 });
 
   const resolveImage = () => {
     if (isMediumScreen) {

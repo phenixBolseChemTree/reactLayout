@@ -14,12 +14,13 @@
   .cardContainer {
     flex-direction: row;
   }
+
   .root {
     margin-bottom: 39px;
   }
 }
 
-@media (min-width: 1416px) {
+@media (min-width: 1320px) {
   .root {
     margin-bottom: 24px;
   }
