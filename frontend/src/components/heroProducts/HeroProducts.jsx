@@ -23,22 +23,25 @@ const HeroProducts = ({ heroProducts }) => {
     <div className={styles.root}>
       <div className={styles.miniWindow}>
         <Carousel
-          className={styles.carousel}
+  // ... другие пропсы
           showArrows
-          // onChange={onChange}
-          // onClickItem={onClickItem}
-          // onClickThumb={onClickThumb}
-          showThumbs={3}
+          showThumbs={false} // Отключаем отображение миниатюр
+          renderItem={(item, props) => (
+            <div style={{ display: 'flex' }}>
+              {heroProducts.slice(props.index, props.index + 4).map((product) => (
+                <Slide
+                  key={product.id}
+                  id={product.id}
+                  colors={product.colors}
+                  title={product.title}
+                  price={product.price}
+                  background={product.background}
+                />
+              ))}
+            </div>
+          )}
         >
-          {heroProducts.map((product) => (
-            <Slide
-              id={product.id}
-              colors={product.colors}
-              title={product.title}
-              price={product.price}
-              background={product.background}
-            />
-          ))}
+          {/* ... */}
         </Carousel>
       </div>
     </div>
