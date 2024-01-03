@@ -37,7 +37,9 @@ function Home() {
       <div>
         <HeroCategories heroCategories={heroCategories} />
       </div>
-      <HeroProducts heroProducts={heroProducts} />
+      <div className="block-2">
+        <HeroProducts heroProducts={heroProducts} />
+      </div>
       {/* <HeroAdvantages /> */}
     </>
   );

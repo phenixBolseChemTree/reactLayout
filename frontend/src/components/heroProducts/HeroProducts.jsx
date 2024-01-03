@@ -10,8 +10,6 @@ import ProductCard from '../productCard/ProductCard';
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const HeroProducts = ({ heroProducts }) => {
-  // const isMediumScreen = useMediaQuery({ maxWidth: 900 });
-  // const isMaxScreen = useMediaQuery({ maxWidth: 1320 });
   const settings = {
     infinite: false,
     speed: 500,
@@ -41,6 +39,7 @@ const HeroProducts = ({ heroProducts }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
+          dotsClass: 'slick-dots',
         },
       },
     ],
@@ -53,7 +52,7 @@ const HeroProducts = ({ heroProducts }) => {
           {...settings}
         >
           {heroProducts.map((product) => (
-            <div className={styles.card}>
+            <div key={product.id} className={styles.card}>
               <ProductCard
                 id={product.id}
                 colors={product.colors}
@@ -75,7 +74,7 @@ HeroProducts.propTypes = {
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
       price: PropTypes.string.isRequired,
-      colors: PropTypes.arrayOf.isRequired,
+      colors: PropTypes.arrayOf(PropTypes.string).isRequired,
       background: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import like from '../../assets/images/heroProducts/like.svg';
 import chear from '../../assets/images/heroProducts/chear.png';
 import lamp from '../../assets/images/heroProducts/lamp.png';
@@ -29,7 +30,7 @@ const ProductCard = ({
       <p className={styles.colorText}>Colours</p>
       <div className={styles.colorPutContainer}>
         {colors.map((color) => (
-          <div className={styles.colorPut} style={{ background: color }} />
+          <div key={uuidv4()} className={styles.colorPut} style={{ background: color }} />
         )) }
       </div>
     </div>
@@ -53,7 +54,7 @@ ProductCard.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  colors: PropTypes.arrayOf.isRequired,
+  colors: PropTypes.arrayOf(PropTypes.string).isRequired,
   background: PropTypes.string.isRequired,
 };
 

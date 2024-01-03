@@ -7,7 +7,13 @@ function HeroCategories({ heroCategories }) {
   return (
     <div className={styles.root}>
       <div className={styles.cardContainer}>
-        {heroCategories.map((category) => <Category id={category.id} title={category.title} />)}
+        {heroCategories.map((category) => (
+          <Category
+            key={category.id}
+            id={category.id}
+            title={category.title}
+          />
+        ))}
       </div>
     </div>
   );
