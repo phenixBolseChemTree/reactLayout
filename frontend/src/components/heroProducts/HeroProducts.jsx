@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 // import { useMediaQuery } from 'react-responsive';
 import styles from './heroProducts.module.css';
-import ProductCard from '../ProductCard/ProductCard';
+import ProductCard from '../productCard';
 // import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const HeroProducts = ({ heroProducts }) => {

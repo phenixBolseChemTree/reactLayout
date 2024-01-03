@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import HeroCategories from '../../components/HeroCategories/HeroCategories';
-import HeroProducts from '../../components/HeroProducts/HeroProducts';
+import Header from '../../components/header';
+import HeroCategories from '../../components/heroCategories';
+import HeroProducts from '../../components/heroProducts';
 
 function Home() {
   const heroCategories = [{
