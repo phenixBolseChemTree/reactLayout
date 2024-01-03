@@ -42,7 +42,6 @@ const Category = ({ id, title }) => {
     return img3Max;
   };
 
-  console.log('category');
   return (
     <div className={styles.card}>
       <img className={styles.cardImg} src={resolveImage(id)} alt="" />
