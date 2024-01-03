@@ -18,20 +18,14 @@
 
 .sliderContainer {
   :global .slick-dots {
-    /* background-color: red; */
     position: absolute;
     top: 418px;
-    /* border: 1px solid black; */
   }
 }
 
 .sliderContainer {
   :global .slick-dots li {
-    /* display: flex; */
     flex-direction: row;
-    
-    /* height: 12px; */
-    /* width: 12px; */
   }
 }
 
@@ -57,20 +51,12 @@
 @media (min-width: 900px) {
   .customSlider {
     width: 875px;
-    top: 418px
+    top: none;
   }
-
-  /* .maxWindow:nth-child(3) . */
 }
 
 @media (min-width: 1320px) {
   .customSlider {
-    width: 1344px;
-    /* margin-left: 24px; */
-    
+    width: 1344px;    
   }
-
-  /* .customSlider {
-    width: 1320px;
-  } */
 }

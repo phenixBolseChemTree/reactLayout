@@ -40,7 +40,6 @@ function Home() {
       <div className="block-2">
         <HeroProducts heroProducts={heroProducts} />
       </div>
-      {/* <HeroAdvantages /> */}
     </>
   );
 }
