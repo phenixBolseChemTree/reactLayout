@@ -1,8 +1,22 @@
 .root {
-  /* height: 430px; */
-  background-color: rgb(13, 76, 186);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  width: 100%;
+}
+
+.customSlider {
+height: auto;
+width: 288px;
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  height: 430px;
+  width: 920px;
+  /* background-color: rgb(13, 76, 186); */
+  /* display: flex; */
+  /* justify-content: space-evenly; */
 }
 
 .carousel {
@@ -13,17 +27,17 @@
 
 
 @media (min-width: 900px) {
-  .carousel {
-    width: 852px;
-    height: 374px;
-  }
+  .customSlider {
+    width: 870px;
+    margin-left: 28px;
+    }
 
   /* .maxWindow:nth-child(3) . */
 }
 
 @media (min-width: 1320px) {
 
-  .carousel {
+  .customSlider {
     width: 1320px;
   }
 }

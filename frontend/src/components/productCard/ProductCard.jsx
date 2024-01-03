@@ -20,13 +20,11 @@ const getProduct = (id) => {
   return pillow;
 };
 
-const Slide = ({
+const ProductCard = ({
   id, colors, title, price, background,
 }) => (
   <div style={{ background }} className={styles.productCard}>
-    <div className={styles.containerImg}>
-      <img src={getProduct(id)} alt="" />
-    </div>
+    <img className={styles.containerImg} src={getProduct(id)} alt="" />
     <div className={styles.colorContainer}>
       <p className={styles.colorText}>Colours</p>
       <div className={styles.colorPutContainer}>
@@ -51,7 +49,7 @@ const Slide = ({
   </div>
 );
 
-Slide.propTypes = {
+ProductCard.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
@@ -59,4 +57,4 @@ Slide.propTypes = {
   background: PropTypes.string.isRequired,
 };
 
-export default Slide;
+export default ProductCard;
