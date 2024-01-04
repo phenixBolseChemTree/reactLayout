@@ -5,7 +5,7 @@ import img1 from '../../assets/images/advantages/advantage-1.png';
 import img2 from '../../assets/images/advantages/advantage-2.png';
 import img3 from '../../assets/images/advantages/advantage-3.png';
 
-const AdvantagesCard = ({ id }) => {
+const AdvantagesCard = ({ id, title, description }) => {
   const resolveImage = () => {
     if (id === 1) {
       return img1;
@@ -20,18 +20,20 @@ const AdvantagesCard = ({ id }) => {
   };
   console.log(123);
 
+  // const title = 'A community\ndoing good';
+  const titleSplit = title.split('\n');
+  console.log('titleSplit: ', titleSplit);
+
   return (
     <div className={styles.root}>
-      {/* <div className={styles.imgContainer}> */}
       <img className={styles.img} src={resolveImage()} alt="" />
-      {/* </div> */}
       <div className={styles.text}>
         <p className={styles.title}>
-          A community
+          {titleSplit[0]}
           <br />
-          doing good
+          {titleSplit[1]}
         </p>
-        <p className={styles.description}>Commerce is a global online marketplace, where people.</p>
+        <p className={styles.description}>{description}</p>
       </div>
     </div>
   );
@@ -39,8 +41,8 @@ const AdvantagesCard = ({ id }) => {
 
 AdvantagesCard.propTypes = {
   id: PropTypes.number.isRequired,
-  // title: PropTypes.string.isRequired,
-  // description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default AdvantagesCard;
