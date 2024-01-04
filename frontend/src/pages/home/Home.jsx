@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
+import HeroAdvantages from '../../components/heroAdvantages.module.css/HeroAdvantages';
 
 function Home() {
   const heroCategories = [{
@@ -37,8 +38,11 @@ function Home() {
       <div>
         <HeroCategories heroCategories={heroCategories} />
       </div>
-      <div className="block-2">
+      <div className="heroProductContainer">
         <HeroProducts heroProducts={heroProducts} />
+      </div>
+      <div className="heroAdvantagesContainer">
+        <HeroAdvantages />
       </div>
     </>
   );
