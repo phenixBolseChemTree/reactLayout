@@ -2,7 +2,8 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
-import HeroAdvantages from '../../components/heroAdvantages.module.css/HeroAdvantages';
+// import HeroAdvantages from '../../components/heroAdvantages.module.css/HeroAdvantages';
+import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
 
 function Home() {
   const heroCategories = [{
@@ -42,7 +43,8 @@ function Home() {
         <HeroProducts heroProducts={heroProducts} />
       </div>
       <div className="heroAdvantagesContainer">
-        <HeroAdvantages />
+        {/* <HeroAdvantages advantages={advantages} /> */}
+        <AdvantagesCard />
       </div>
     </>
   );
