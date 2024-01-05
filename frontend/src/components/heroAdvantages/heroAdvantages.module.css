@@ -1,0 +1,49 @@
+.root {
+  /* border: 4px solid black; */
+  width: 288px;
+  /* height: 350px; */
+}
+
+.sliderContainer {
+  :global .slick-dots {
+    position: absolute;
+    top: 312px;
+  }
+}
+
+.sliderContainer {
+  :global .slick-dots li {
+    flex-direction: row;
+  }
+}
+
+.sliderContainer {
+  :global .slick-dots li button {
+    /* background: red; */
+    background: #F5F6F8;
+    color: rebeccapurple;
+    border-radius: 100px;
+    border: 1px solid #E9E9E9;
+    
+  }
+}
+
+.sliderContainer {
+  :global .slick-dots .slick-active button {
+    background-color: orange;
+    border-radius: 100px;
+    border: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .root {
+    width: 852px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .root {
+    width: 1320px;
+  }
+}

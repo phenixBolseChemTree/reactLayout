@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-// import { useMediaQuery } from 'react-responsive';
-import styles from './heroProducts.module.css';
-import ProductCard from '../productCard/ProductCard';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import styles from './heroAdvantages.module.css';
+import AdvantagesCard from '../advantagesCard/AdvantagesCard';
 
-const HeroProducts = ({ heroProducts }) => {
+const HeroAdvantages = ({ advantages }) => {
   const settings = {
     infinite: false,
     speed: 500,
@@ -43,22 +41,21 @@ const HeroProducts = ({ heroProducts }) => {
       },
     ],
   };
+
   return (
     <div className={styles.root}>
       <div className={styles.sliderContainer}>
         <Slider
           className={styles.customSlider}
-          // eslint-disable-next-line react/jsx-props-no-spreading
+        // eslint-disable-next-line react/jsx-props-no-spreading
           {...settings}
         >
-          {heroProducts.map((product) => (
-            <div key={product.id} className={styles.card}>
-              <ProductCard
-                id={product.id}
-                colors={product.colors}
-                title={product.title}
-                price={product.price}
-                background={product.background}
+          {advantages.map((advantage) => (
+            <div key={advantage.id} className={styles.card}>
+              <AdvantagesCard
+                id={advantage.id}
+                title={advantage.title}
+                description={advantage.description}
               />
             </div>
           ))}
@@ -68,16 +65,13 @@ const HeroProducts = ({ heroProducts }) => {
   );
 };
 
-HeroProducts.propTypes = {
-  heroProducts: PropTypes.arrayOf(
+HeroAdvantages.propTypes = {
+  advantages: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
-      price: PropTypes.string.isRequired,
-      colors: PropTypes.arrayOf(PropTypes.string).isRequired,
-      background: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
 };
-
-export default HeroProducts;
+export default HeroAdvantages;

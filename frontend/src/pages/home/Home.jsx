@@ -2,8 +2,8 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
-// import HeroAdvantages from '../../components/heroAdvantages.module.css/HeroAdvantages';
-import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
+import HeroAdvantages from '../../components/heroAdvantages/HeroAdvantages';
+// import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
 
 function Home() {
   const heroCategories = [{
@@ -33,6 +33,12 @@ function Home() {
     },
   ];
 
+  const advantages = [
+    { id: 1, title: 'A community\ndoing good', description: 'Commerce is a global online marketplace, where people.' },
+    { id: 2, title: 'Support independent\ncreators', description: 'Just millions of people selling the things they love.' },
+    { id: 3, title: 'Peace\nof mind', description: 'Privacy is the highest priority of our dedicated team.' },
+  ];
+
   return (
     <>
       <Header />
@@ -43,8 +49,8 @@ function Home() {
         <HeroProducts heroProducts={heroProducts} />
       </div>
       <div className="heroAdvantagesContainer">
-        {/* <HeroAdvantages advantages={advantages} /> */}
-        <AdvantagesCard />
+        <HeroAdvantages advantages={advantages} />
+        {/* <HerpAdva */}
       </div>
     </>
   );
