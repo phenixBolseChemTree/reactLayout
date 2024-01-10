@@ -92,6 +92,14 @@
   margin-right: 8px;
 }
 
+
+/* @media (min-width: 240px) {
+  .productCard {
+    width: 288px;
+    height: 394px;
+  }
+} */
+
 @media (min-width: 900px) {
   .productCard {
     width: 268px;

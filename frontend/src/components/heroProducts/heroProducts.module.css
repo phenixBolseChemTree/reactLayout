@@ -50,8 +50,12 @@
 
 @media (min-width: 900px) {
   .customSlider {
-    width: 875px;
+    width: 876px;
     top: none;
+  }
+
+  .sliderContainer {
+    margin-left: 24px;
   }
 }
 
