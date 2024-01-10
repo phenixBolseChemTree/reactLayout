@@ -10,12 +10,6 @@
   width: 288px;
 }
 
-
-.carousel {
-  width: 288px;
-  height: 428px;
-}
-
 .sliderContainer {
   :global .slick-dots {
     position: absolute;
@@ -31,7 +25,6 @@
 
 .sliderContainer {
   :global .slick-dots li button {
-    /* background: red; */
     background: #F5F6F8;
     color: rebeccapurple;
     border-radius: 100px;

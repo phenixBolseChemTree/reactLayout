@@ -1,3 +1,8 @@
+.mainRoot {
+  width: 288px;
+  height: 283px;
+}
+
 .root {
   width: 288px;
   height: 283px;
@@ -41,6 +46,11 @@
     width: 268px;
     height: 282px;
   }
+.mainRoot {
+  width: 268px;
+  height: 282px;
+}
+
   .img {
     left: 71px;
     width: 126px;
@@ -58,6 +68,10 @@
 
 @media (min-width: 1320px) {
   .root {
+    width: 424px;
+    height: 174px;
+  }
+  .mainRoot {
     width: 424px;
     height: 174px;
   }

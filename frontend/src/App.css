@@ -4,8 +4,8 @@
 
 .heroAdvantagesContainer {
   margin-bottom: 70px;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 
 @media (min-width: 900px) {
