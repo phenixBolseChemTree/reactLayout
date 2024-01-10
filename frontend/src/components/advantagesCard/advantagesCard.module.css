@@ -2,7 +2,6 @@
   width: 288px;
   height: 283px;
   background-color: #F5F6F8;
-  /* margin: 100px; */
   position: relative;
   border-radius: 5px;
 }
@@ -36,11 +35,6 @@
   text-align: center;
   color: #292929;
 }
-
-/* .mainRoot {
-  width: 288px;
-  height: 283px;
-} */
 
 @media (min-width: 900px) {
   .root {
