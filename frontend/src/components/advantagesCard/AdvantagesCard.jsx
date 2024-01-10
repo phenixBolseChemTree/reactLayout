@@ -6,7 +6,6 @@ import img2 from '../../assets/images/advantages/advantage-2.png';
 import img3 from '../../assets/images/advantages/advantage-3.png';
 
 const AdvantagesCard = ({ id, title, description }) => {
-  console.log('title', title);
   const resolveImage = () => {
     if (id === 1) {
       return img1;
@@ -19,10 +18,8 @@ const AdvantagesCard = ({ id, title, description }) => {
     }
     return img1;
   };
-  console.log(123);
 
   const titleSplit = title.split('\n');
-  console.log('titleSplit: ', titleSplit);
 
   return (
     <div className={styles.mainRoot}>
