@@ -37,6 +37,7 @@ const HeroPhotos = ({ photoData }) => {
           slidesToScroll: 1,
           dots: true,
           dotsClass: 'slick-dots',
+
         },
       },
     ],
