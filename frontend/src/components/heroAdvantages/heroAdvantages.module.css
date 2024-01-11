@@ -13,7 +13,7 @@
 .sliderContainer {
   :global .slick-dots {
     position: absolute;
-    top: 312px;
+    top: 300px;
   }
 }
 

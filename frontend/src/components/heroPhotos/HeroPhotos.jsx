@@ -45,6 +45,13 @@ const HeroPhotos = ({ photoData }) => {
   console.log('HeroPhotos');
   return (
     <div className={styles.root}>
+      <div className={styles.textContainer}>
+        <div className={styles.twoLineText}>
+          <p className={styles.textBlack}>{'Find things you\'ll love.'}</p>
+          <p className={styles.textBlack}>Support independent sellers.</p>
+        </div>
+        <p className={styles.textLightBlack}>Only on polka.</p>
+      </div>
       <div className={styles.sliderContainer}>
         <Slider
           className={styles.customSlider}

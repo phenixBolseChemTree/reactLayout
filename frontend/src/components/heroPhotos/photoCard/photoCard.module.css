@@ -1,12 +1,12 @@
 .img {
-  width: 128px;
-  height: 128px;
+  width: 120px;
+  height: 120px;
   border-radius: 5px;
 }
 
 .imgContainer {
-  width: 144px;
-  height: 144px;
+  width: 136px;
+  height: 136px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -28,4 +28,22 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  color: #3E3E3E;
+}
+
+
+@media (min-width: 900px) {
+  .img {
+    width: 128px;
+    height: 128px;
+  }
+  
+  .imgContainer {
+    width: 144px;
+    height: 144px;
+  }
+}
+
+@media (min-width: 1320px) {
+
 }
