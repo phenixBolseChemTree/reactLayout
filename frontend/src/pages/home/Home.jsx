@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header';
 import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
 import HeroAdvantages from '../../components/heroAdvantages/HeroAdvantages';
+import PhotoCard from '../../components/heroPhotos/photoCard/PhotoCard';
 // import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
 
 function Home() {
@@ -51,6 +52,9 @@ function Home() {
       <div className="heroAdvantagesContainer">
         <HeroAdvantages advantages={advantages} />
         {/* <HerpAdva */}
+      </div>
+      <div className="heroPhotoContainer">
+        <PhotoCard />
       </div>
     </>
   );

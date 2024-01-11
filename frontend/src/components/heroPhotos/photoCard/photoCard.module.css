@@ -1,0 +1,31 @@
+.img {
+  width: 128px;
+  height: 128px;
+  border-radius: 5px;
+}
+
+.imgContainer {
+  width: 144px;
+  height: 144px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+/* .photoContainer {
+} */
+
+.titleContainer {
+  margin-top: 24px;
+  width: 144px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
