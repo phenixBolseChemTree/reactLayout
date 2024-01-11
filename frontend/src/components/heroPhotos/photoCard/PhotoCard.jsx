@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './photoCard.module.css';
 import img1 from '../../../assets/images/Photos/photo_1.png';
 import img2 from '../../../assets/images/Photos/photo_2.png';
@@ -34,24 +35,25 @@ const getPhoto = (id) => {
   return img8;
 };
 
-const data = { id: 1, title: 'Craft Kits' };
-
-const HeroPhotos = () => {
-  console.log('PhotoCard');
-  console.log(getPhoto());
+const PhotoCard = ({ id, title }) => {
+  console.log('PhotoCard id: ', id);
   return (
     <div className={styles.root}>
       <div className={styles.photoContainer}>
         <div className={styles.imgContainer}>
-          <img className={styles.img} src={getPhoto(data.id)} alt="" />
+          <img className={styles.img} src={getPhoto(id)} alt="" />
         </div>
         <div className={styles.titleContainer}>
-          <p className={styles.title}>{data.title}</p>
+          <p className={styles.title}>{title}</p>
         </div>
       </div>
     </div>
-
   );
 };
 
-export default HeroPhotos;
+PhotoCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default PhotoCard;

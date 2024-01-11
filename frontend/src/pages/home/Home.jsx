@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
 import HeroAdvantages from '../../components/heroAdvantages/HeroAdvantages';
-import PhotoCard from '../../components/heroPhotos/photoCard/PhotoCard';
+import HeroPhotos from '../../components/heroPhotos/HeroPhotos';
 // import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
 
 function Home() {
@@ -40,6 +40,17 @@ function Home() {
     { id: 3, title: 'Peace\nof mind', description: 'Privacy is the highest priority of our dedicated team.' },
   ];
 
+  const photoData = [
+    { id: 1, title: 'Craft Kits' },
+    { id: 2, title: 'Throw Pillows' },
+    { id: 3, title: 'Natural Glass' },
+    { id: 4, title: 'Self-care' },
+    { id: 5, title: 'Gift Ideas' },
+    { id: 6, title: 'Wall Decor' },
+    { id: 7, title: 'Wedding' },
+    { id: 8, title: 'Life Style' },
+  ];
+
   return (
     <>
       <Header />
@@ -54,7 +65,7 @@ function Home() {
         {/* <HerpAdva */}
       </div>
       <div className="heroPhotoContainer">
-        <PhotoCard />
+        <HeroPhotos photoData={photoData} />
       </div>
     </>
   );
