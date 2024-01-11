@@ -10,22 +10,22 @@ const HeroPhotos = ({ photoData }) => {
   const settings = {
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 8,
     slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1320,
         settings: {
-          slidesToShow: 8,
-          slidesToScroll: 8,
+          slidesToShow: 5,
+          slidesToScroll: 2,
           infinite: true,
         },
       },
       {
         breakpoint: 900,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
         },
