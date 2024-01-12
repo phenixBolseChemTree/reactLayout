@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.sugestionContainer {
+  height: 260px;
+  width: 288px;
+  background-color: #5959D9;
+}

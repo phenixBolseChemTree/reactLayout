@@ -4,7 +4,7 @@ import HeroCategories from '../../components/heroCategories/HeroCategories';
 import HeroProducts from '../../components/heroProducts/HeroProducts';
 import HeroAdvantages from '../../components/heroAdvantages/HeroAdvantages';
 import HeroPhotos from '../../components/heroPhotos/HeroPhotos';
-// import AdvantagesCard from '../../components/advantagesCard/AdvantagesCard';
+import Sugestion from '../../components/sugestion/Sugestion';
 
 function Home() {
   const heroCategories = [{
@@ -66,6 +66,9 @@ function Home() {
       </div>
       <div className="heroPhotoContainer">
         <HeroPhotos photoData={photoData} />
+      </div>
+      <div className="sugestionContainer">
+        <Sugestion />
       </div>
     </>
   );

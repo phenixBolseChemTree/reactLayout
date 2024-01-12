@@ -12,8 +12,15 @@
   margin-bottom: 68px;
 }
 
+.sugestionContainer {
+  margin-top: 46px;
+}
+
 @media (min-width: 900px) {
   .heroProductContainer {
     margin-bottom: 48px;
+  }
+  .sugestionContainer {
+    margin-top: 0;
   }
 }
