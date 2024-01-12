@@ -47,7 +47,6 @@ const HeroAdvantages = ({ advantages }) => {
       <div className={styles.sliderContainer}>
         <Slider
           className={styles.customSlider}
-        // eslint-disable-next-line react/jsx-props-no-spreading
           {...settings}
         >
           {advantages.map((advantage) => (

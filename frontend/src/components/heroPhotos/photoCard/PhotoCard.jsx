@@ -35,21 +35,18 @@ const getPhoto = (id) => {
   return img8;
 };
 
-const PhotoCard = ({ id, title }) => {
-  console.log('PhotoCard id: ', id);
-  return (
-    <div className={styles.root}>
-      <div className={styles.photoContainer}>
-        <div className={styles.imgContainer}>
-          <img className={styles.img} src={getPhoto(id)} alt="" />
-        </div>
-        <div className={styles.titleContainer}>
-          <p className={styles.title}>{title}</p>
-        </div>
+const PhotoCard = ({ id, title }) => (
+  <div className={styles.root}>
+    <div className={styles.photoContainer}>
+      <div className={styles.imgContainer}>
+        <img className={styles.img} src={getPhoto(id)} alt="" />
+      </div>
+      <div className={styles.titleContainer}>
+        <p className={styles.title}>{title}</p>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 PhotoCard.propTypes = {
   id: PropTypes.number.isRequired,

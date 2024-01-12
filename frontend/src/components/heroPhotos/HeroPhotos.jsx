@@ -42,7 +42,6 @@ const HeroPhotos = ({ photoData }) => {
       },
     ],
   };
-  console.log('HeroPhotos');
   return (
     <div className={styles.root}>
       <div className={styles.textContainer}>
@@ -55,12 +54,10 @@ const HeroPhotos = ({ photoData }) => {
       <div className={styles.sliderContainer}>
         <Slider
           className={styles.customSlider}
-          // eslint-disable-next-line react/jsx-props-no-spreading
           {...settings}
         >
           {photoData.map((photo) => (
             <PhotoCard
-          // key={photo.id}
               id={photo.id}
               title={photo.title}
             />
