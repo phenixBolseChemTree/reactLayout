@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './hero-categories.module.css';
-import Category from './category/Category';
+import Category from './category';
 
 function HeroCategories({ heroCategories }) {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../../components/header/Header';
-import HeroCategories from '../../components/heroCategories/HeroCategories';
-import HeroProducts from '../../components/heroProducts/HeroProducts';
-import HeroAdvantages from '../../components/heroAdvantages/HeroAdvantages';
-import HeroPhotos from '../../components/heroPhotos/HeroPhotos';
-import Sugestion from '../../components/sugestion/Sugestion';
+import HeroCategories from '../../components/heroCategories';
+import HeroProducts from '../../components/heroProducts';
+import HeroAdvantages from '../../components/heroAdvantages';
+import HeroPhotos from '../../components/heroPhotos';
+import Sugestion from '../../components/sugestion';
 
 function Home() {
   const heroCategories = [{
