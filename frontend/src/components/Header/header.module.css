@@ -87,7 +87,6 @@
     margin-right: 16px;
     padding: 0;
     cursor: pointer;
-    /* background-color: red; */
   }
 
   .imgSort {
@@ -166,7 +165,6 @@
     top: 8px;
     left: 8px;
     display: none;
-    /* display: flex; */
     background-color: #F5F6F8;
     width: 154px;
     height: 32px;
@@ -230,7 +228,6 @@
     }
 
     .line_1 {
-      /* margin-left: 24px; */
       padding-left: 24px;
       padding-right: 24px;
     }
@@ -245,7 +242,6 @@
 
       width: 86px;
       margin-right: 24px;
-      /* background-color: red; */
     }
 
 
@@ -300,7 +296,6 @@
     }
 
     .line_1 {
-      /* width: 1320px; */
     }
 
     .categoriesBoard {
@@ -317,11 +312,6 @@
 
     .categoriesText:nth-child(4) {
       color: #EB8426;
-      /* margin-right: 48px;
-      color: #3E3E3E;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px; */
     }
 
   }

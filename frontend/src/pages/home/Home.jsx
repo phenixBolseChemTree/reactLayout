@@ -62,7 +62,6 @@ function Home() {
       </div>
       <div className="heroAdvantagesContainer">
         <HeroAdvantages advantages={advantages} />
-        {/* <HerpAdva */}
       </div>
       <div className="heroPhotoContainer">
         <HeroPhotos photoData={photoData} />

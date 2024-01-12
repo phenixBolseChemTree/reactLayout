@@ -10,7 +10,6 @@
 .cardImg {
   width: 288px;
   height: 180px;
-  /* background-size: cover; */
 }
 
 .cardText {
@@ -21,12 +20,6 @@
   font-weight: 400;
   line-height: 20px;
 }
-
-/* .card:nth-child(1) .cardImg {
-  width: 288px;
-  height: 180px;
-  background-repeat: round;
-} */
 
 @media (min-width: 900px) {
   .card:nth-child(2) {

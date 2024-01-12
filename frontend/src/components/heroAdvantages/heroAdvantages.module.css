@@ -40,22 +40,8 @@
   }
 }
 
-/* 
-.sliderContainer {
-  :global .slick-track {
-    background: #1145ac;
-    width: 1344px;
-  }
-} */
-
-
 @media (min-width: 900px) {
-  /* .root {
-    width: 876px;
-    margin-left: 24px;
-  } */
 
-  /* .sliderContainer */
   .sliderContainer {
     margin-left: 24px;
   }
