@@ -266,6 +266,10 @@
     margin-right: 24px;
   }
 
+  .searchInput {
+    padding-left: 178px;
+  }
+
 }
 
 @media (min-width: 1320px) {
@@ -292,15 +296,9 @@
     width: 1320px;
   }
 
-  .line_1 {
-  }
 
   .categoriesBoard {
     display: block;
-  }
-
-  .searchInput {
-    padding-left: 178px;
   }
 
   .pages {
