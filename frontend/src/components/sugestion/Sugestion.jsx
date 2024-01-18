@@ -41,6 +41,7 @@ const Sugestion = () => {
             </div>
           </button>
         </form>
+        <p className={styles.ready}>First order only. You’re ready?</p>
       </div>
     </div>
   );

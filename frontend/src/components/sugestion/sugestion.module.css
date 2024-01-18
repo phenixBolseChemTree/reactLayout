@@ -4,6 +4,7 @@
 }
 
 .sugestionContainer {
+  position: relative;
   height: 260px;
   width: 288px;
   background-color: #5959D9;
@@ -161,6 +162,10 @@
   display: none;
 }
 
+.ready {
+  display: none;
+}
+
 @media (min-width: 900px) {
   .sugestionContainer {
     width: 852px;
@@ -229,5 +234,39 @@
   }
   .buttonTitleDesktop {
     margin-right: 8px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .sugestionContainer {
+    height: 306px;
+    width: 1320px;
+
+    /* background-color: #5959D9; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* border-radius: 5px; */
+  }
+  .formDesktop {
+    position: absolute;
+    top: 172px;
+  }
+
+  .ready {
+    position: absolute;
+    top: 242px;
+    display: flex;
+    color: #D6D6D6;
+    font-style: 12px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  
+  .text {
+    position: absolute;
+    top: 40px;
+    left: 112px;
+    margin: 0;
   }
 }
