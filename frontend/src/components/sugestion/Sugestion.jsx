@@ -20,12 +20,23 @@ const Sugestion = () => {
           </div>
         </div>
         <form onSubmit={handleSubmit} className={styles.formMobile}>
-          <div className={styles.inputContainer}>
-            <input className={styles.input} type="text" placeholder="Drop your Email" />
+          <div className={styles.inputContainerMobile}>
+            <input className={styles.inputMobile} type="text" placeholder="Drop your Email" />
           </div>
-          <button className={styles.inputButton} type="submit">
-            <div className={styles.buttonContent}>
-              <p className={styles.buttonTitle}>Drop your Email</p>
+          <button className={styles.inputButtonMobile} type="submit">
+            <div className={styles.buttonContentMobile}>
+              <p className={styles.buttonTitleMobile}>Drop your Email</p>
+              <img className={styles.imgArrow} src={arrowImg} alt="" />
+            </div>
+          </button>
+        </form>
+        <form onSubmit={handleSubmit} className={styles.formDesktop}>
+          <div className={styles.inputContainerDesktop}>
+            <input className={styles.inputDesktop} type="text" placeholder="Drop your Email" />
+          </div>
+          <button className={styles.inputButtonDesktop} type="submit">
+            <div className={styles.buttonContentDesktop}>
+              <p className={styles.buttonTitleDesktop}>Subscribe</p>
               <img className={styles.imgArrow} src={arrowImg} alt="" />
             </div>
           </button>

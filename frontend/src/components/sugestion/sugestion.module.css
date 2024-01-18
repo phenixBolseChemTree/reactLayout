@@ -18,7 +18,6 @@
   margin-bottom: 24px;
   justify-content: center;
   width: 256px;
-
 }
 
 .title {
@@ -37,17 +36,6 @@
   line-height: 16px;
 }
 
-.formDesctop {
-  /* background-color: red; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 96px;
-  width: 256px;
-}
-
-
 .formMobile {
   /* background-color: red; */
   display: flex;
@@ -58,7 +46,7 @@
   width: 256px;
 }
 
-.inputContainer {
+.inputContainerMobile {
   width: 256px;
   height: 48px;
   border-radius: 50px;
@@ -68,7 +56,7 @@
   line-height: 16px; */
 }
 
-.input {
+.inputMobile {
   width: 230px;
   height: 48px;
   border-radius: 50px;
@@ -80,7 +68,7 @@
 }
 
 
-.inputButton {
+.inputButtonMobile {
   background-color: #EB8426;
   width: 256px;
   height: 32px;
@@ -89,19 +77,88 @@
 }
 
 
-.buttonContent {
+.buttonContentMobile {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.buttonTitle {
+.buttonTitleMobile {
   display: flex;
   margin-right: 8px;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+/* ----------------------- */
+
+.formDesctop {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 633px;
+}
+
+.inputContainerDesctop {
+  width: 256px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  /* font-weight: 400;
+  font-size: 12px;
+  line-height: 16px; */
+}
+
+.inputDesctop {
+  width: 230px;
+  height: 48px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 24px;
+}
+
+
+.inputButtonDesctop {
+  background-color: #EB8426;
+  width: 256px;
+  height: 32px;
+  border-radius: 50px;
+  border: none;
+}
+
+
+.buttonContentDesctop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttonTitleDesctop {
+  display: flex;
+  margin-right: 8px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+
+/* ------------------------ */
+.imgArrow {
+  width: 16px;
+  height: 16px;
+}
+
+.formDesktop {
+  display: none;
 }
 
 @media (min-width: 900px) {
@@ -111,8 +168,15 @@
   }
 
   .text {
-    width: 523px;
+    width: 633px;
     margin-bottom: 48px;
+    margin-top: 40px;
+  }
+
+  .discription {
+    width: 450px;
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .title {
@@ -126,5 +190,44 @@
 
   .formMobile {
     display: none;
+  }
+
+  .formDesktop {
+    display: flex;
+    position: relative;
+  }
+
+  .inputContainerDesktop {
+    width: 633px;
+    height: 48px;
+  }
+  .inputDesktop {
+    width: 607px;
+    height: 47px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 24px;
+  }
+  .inputButtonDesktop {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: row;
+    background-color: #EB8426;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+  }
+  .buttonContentDesktop {
+    width: 133px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonTitleDesktop {
+    margin-right: 8px;
   }
 }
