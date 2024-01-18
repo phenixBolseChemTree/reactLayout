@@ -58,6 +58,7 @@ const HeroPhotos = ({ photoData }) => {
         >
           {photoData.map((photo) => (
             <PhotoCard
+              key={photo.id}
               id={photo.id}
               title={photo.title}
             />
