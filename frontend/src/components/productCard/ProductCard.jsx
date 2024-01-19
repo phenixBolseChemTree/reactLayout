@@ -27,7 +27,7 @@ const ProductCard = ({
   <div style={{ background }} className={styles.productCard}>
     <img className={styles.containerImg} src={getProduct(id)} alt="" />
     <div className={styles.colorContainer}>
-      <p className={styles.colorText}>Colours</p>
+      <p className={styles.colorText}>Colors</p>
       <div className={styles.colorPutContainer}>
         {colors.map((color) => (
           <div key={uuidv4()} className={styles.colorPut} style={{ background: color }} />

@@ -16,7 +16,8 @@
 }
 
 .titleContainer {
-  margin-top: 24px;
+  margin-top: 16px;
+  margin-left: -4px;
   width: 144px;
   text-align: center;
 }

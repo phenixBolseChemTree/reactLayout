@@ -1,9 +1,9 @@
 .heroProductContainer {
-  margin-bottom: 70px;
+  margin-bottom: 57px;
 }
 
 .heroAdvantagesContainer {
-  margin-bottom: 70px;
+  margin-bottom: 64px;
 }
 
 .heroPhotoContainer {
@@ -19,7 +19,7 @@
 
 @media (min-width: 900px) {
   .heroProductContainer {
-    margin-bottom: 48px;
+    margin-bottom: 44px;
   }
   .sugestionContainer {
     margin-top: 0;

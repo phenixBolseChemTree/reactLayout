@@ -9,7 +9,7 @@
   height: 74px;
   align-items: start;
   position: relative;
-  left: -19px;
+  left: -25px;
   margin-bottom: 24px;
 }
 
@@ -33,7 +33,8 @@
 .customSlider {
   position: relative;
   height: auto;
-  width: 288px;
+  width: 303px;
+  left: 8px;
 }
 
 .sliderContainer {
@@ -73,6 +74,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 @media (min-width: 900px) {
   .customSlider {

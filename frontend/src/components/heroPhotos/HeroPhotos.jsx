@@ -51,7 +51,7 @@ const HeroPhotos = ({ photoData }) => {
         </div>
         <p className={styles.textLightBlack}>Only on polka.</p>
       </div>
-      <div className={styles.sliderContainer}>
+      <div className={styles.z}>
         <Slider
           className={styles.customSlider}
           {...settings}

@@ -23,20 +23,23 @@ const Header = () => (
             <img className={styles.searchDown} src={search} alt="" />
           </button>
         </div>
-        <div className={styles.pages}>
-          <button type="button" className={styles.helpBtn}>Help</button>
-          <a href="#" className={styles.headerLink}>
-            <img className={styles.headerIcon} src={user} alt="" />
-            <p className={styles.pagesText}>Account</p>
-          </a>
-          <a href="#" className={styles.headerLink}>
-            <div className={styles.headerIcon}>
-              <img src={bag} alt="" />
-              <span className={styles.counter}>16</span>
-            </div>
-            <p className={styles.pagesText}>Shoping</p>
-          </a>
+        <div className={styles.pagesContainer}>
+          <div className={styles.pages}>
+            <button type="button" className={styles.helpBtn}>Help</button>
+            <a href="#" className={styles.headerLink}>
+              <img className={styles.headerIcon} src={user} alt="" />
+              <p className={styles.pagesText}>Account</p>
+            </a>
+            <a href="#" className={styles.headerLink}>
+              <div className={styles.headerIcon}>
+                <img src={bag} alt="" />
+                <span className={styles.counter}>16</span>
+              </div>
+              <p className={styles.pagesText}>Shoping</p>
+            </a>
+          </div>
         </div>
+
       </div>
       <div className={styles.line_2}>
         <button type="button" className={styles.burgerBtn}>

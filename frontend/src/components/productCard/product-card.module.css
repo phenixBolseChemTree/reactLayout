@@ -8,8 +8,8 @@
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  top: 16px;
-  right: 16px;
+  top: 17px;
+  right: 17px;
 }
 
 .containerImg {
@@ -66,7 +66,7 @@
   font-weight: 500;
   line-height: 24px;
   color: #3E3E3E;
-  top: 352px;
+  top: 350px;
   left: 24px;
 }
 
@@ -112,7 +112,7 @@
   }
 
   .price {
-    top: 332px;
+    top: 329px;
   }
 }
 
